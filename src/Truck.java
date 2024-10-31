@@ -2,22 +2,21 @@ import java.util.List;
 
 public class Truck extends Car {
     private int numberOfWheels;
-
-    public Truck(String color, String licensePlate, Double pricePerDay) {
+    private double pricePerDay;
+    public Truck(String color, String licensePlate, double pricePerDay) {
         super(color, licensePlate, pricePerDay);
         this.numberOfWheels = 4;
     }
 
     @Override
     public Double calculateDailyRentalFee() {
-        return 0.0;
+        return pricePerDay * 1.2;
     }
 
     @Override
     public void rentVehicle() {
 
     }
-
     @Override
     public void returnVehicle() {
 

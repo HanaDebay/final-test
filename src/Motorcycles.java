@@ -12,7 +12,6 @@ public class Motorcycles implements Vehicle {
     }
 
 
-
     @Override
     public void rentVehicle() {
 
@@ -26,10 +25,5 @@ public class Motorcycles implements Vehicle {
     @Override
     public double calculateRentalCost() {
         return 0;
-    }
-
-    @Override
-    public List<Rental> getRentalHistory() {
-        return List.of();
     }
 }
